@@ -1,0 +1,100 @@
+<!-- Title(웹페이지의 제목) -->
+<!-- HTML 문서의 제목을 정의합니다.
+웹 브라우저의 각 사이트 탭에서 이름으로 표시됩니다. -->
+
+<head>
+    <title>네이버</title>
+</head>
+
+<!-- meta -->
+<!-- HTML 문서(웹페이지)에 관한 정보(표시 방식, 제작자(소유자), 내용, 키워드 등)를 검색엔진이나 브라우저에 제공합니다.
+빈(Empty) 태그입니다. -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- charset은 문자 인코딩 방식으로 반드시 들어가야함  -->
+    <meta name="author" content="홍길동">
+    <meta name="description" content="우리 사이트가 최고!">
+</head>
+
+<!-- 다음과 같이 이해할 수 있습니다. -->
+<문서의정보범위>
+    <정보 문자인코딩방식="UTF-8">
+        <정보 정보종류="사이트제작자" 정보값="홍길동">
+            <정보 정보종류="사이트설명" 정보값="우리 사이트가 최고!">
+</문서의정보범위>
+
+<!-- Link -->
+<!-- 외부 문서를 연결할 때 사용합니다.
+특히 HTML 외부에서 작성된 CSS 문서(xxx.css 파일)를 불러와 연결할 때 사용합니다.
+빈(Empty) 태그입니다. -->
+
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- link는 필수로 rel이 필요하다 -->
+    <link rel="icon" href="./favicon.png">
+</head>
+
+<!-- 다음과 같이 이해할 수 있습니다. -->
+<문서의정보범위>
+    <외부문서연결 관계="CSS" 문서경로="./css/main.css">
+        <외부문서연결 관계="사이트대표아이콘" 문서경로="./favicon.png">
+</문서의정보범위>
+
+<!-- Style -->
+<!-- CSS를 외부 문서에서 작성하여 연결하는 것이 아니고 HTML 문서 내부에 작성할 때 사용합니다. -->
+
+<style>
+    img {
+        width: 100px;
+        height: 200px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<!-- 다음과 같이 이해할 수 있습니다. -->
+<스타일정의>
+    <!-- CSS 코드 -->
+</스타일정의>
+
+<!-- SCRIPT(JS 불러오거나 작성하기) -->
+<!-- 불러오기 -->
+<script src="./js/main.js"></script>
+
+<!-- 작성하기 -->
+<script>
+    function windowOnClickHandler(event) {
+        console.log(event);
+    }
+    window.addEventListener('click', windowOnClickHandler);
+</script>
+
+<!-- 다음과 같이 이해할 수 있습니다. -->
+
+<!-- 불러오기 -->
+<자바스크립트 문서경로="./js/main.js"></자바스크립트>
+
+<!-- 작성하기 -->
+<자바스크립트>
+    <!-- JS 코드 -->
+</자바스크립트>
+
+<!-- IMG(이미지 넣는 태그) -->
+<!-- <img>는 HTML에 이미지를 삽입할 때 사용합니다.
+(웹 페이지에 이미지를 삽입하는 방식은 크게 2가지로, ‘HTML에서 삽입(IMG)’과 ‘CSS에서 삽입(background)’이 있습니다) -->
+ 
+<body>
+    <img src="./kitty.png" alt="냥이">
+    <!-- src는 이미지 경로, alt는 이미지가 나오지 않을 경우 대체 텍스트
+    반드시 둘다 필요하다 -->
+</body>
+
+<!-- 다음과 같이 이해할 수 있습니다. -->
+
+<body>
+    <이미지 경로="./kitty.png" 대체텍스트="냥이">
+</body>
