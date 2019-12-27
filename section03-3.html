@@ -1,0 +1,53 @@
+<!-- 인라인 방식 같은 경우에는 HTML 태그에 직접 작성하기 때문에 선택자가 필요하지 않는다  -->
+<div style="color: red;">태그에 직접 작성1</div> <!-- red --> 속성: 값
+<div style="color: red;">태그에 직접 작성2</div> <!-- red -->
+<div style="color: red;">태그에 직접 작성3</div> <!-- red -->
+<div style="color: red;">태그에 직접 작성4</div> <!-- red -->
+<!-- 단점: 
+1) 직접 태그를 찾아서 태그에 값을 넣어줘야하는데
+예를 들어 div가 여러개 있을경우 직접 찾아서 작성해야 하기 때문에 
+인라인 방식은 피하는게 좋다 
+2) 수정을 하기 어렵다  -->
+
+
+<!-- /* HTML에 포함하기(내장) */
+/* style은 헤드태그에 설정 */ -->
+<head>
+  <style>
+    div {
+      color: red;
+    }
+  </style>  
+</head>
+<body>
+  <div>HTML에 포함1</div> <!-- red -->
+  <div>HTML에 포함2</div> <!-- red -->
+  <div>HTML에 포함3</div> <!-- red -->
+</body>
+
+<!-- /*HTML 외부에서 불러오기 */
+/* CSS 코드를 완전히 분리할 수 있습니다.
+분리된 하나의 CSS 파일을 여러 HTML 파일이 불러와서 사용할 수 있다. */ -->
+
+<!-- HTML 1 -->
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- /* 외부 경로: 상대 경로, 절대 경로*/ -->
+</head>
+<body>
+  <div>HTML에 외부에서 불러오기1</div> <!-- red -->
+</body>
+
+<!-- HTML 2 -->
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div>HTML에 외부에서 불러오기2</div> <!-- red -->
+</body>
+
+<!-- /* main.css에 적용이 되어있어서 div에 red가 적용이 되어있다  */ -->
+div {
+    color: red;
+  }
+
