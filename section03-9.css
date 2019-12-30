@@ -1,0 +1,53 @@
+body{
+
+ /* 브라우저마다 기본 설정으로 BODY 요소에 margin과 padding의 값이 설정되어 있습니다. */
+  /* 각각의 브라우저마다 BODY 요소가 다른 값을 가지고 있을 수 있으므로 우리가 일정하게 초기화해서 사용합니다. */
+  /* 0은 단위를 사용하지 않습니다. */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: white;
+    border-bottom: 1px solid lightgray; /*헤더 밑에 짧은 실선*/
+
+}
+
+.container {
+    width: 980px; /* 중앙으로 몬 효과*/
+    margin: auto;  
+    /* padding: 20px 0; 위아래 20, 왼쪽오른쪽 0 */
+    
+}
+
+.container-left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+
+    margin-right: 5px; /*로고와 메뉴 사이에 여백을 주기위해서*/
+    float: left;
+}
+
+.logo img { /*class logo라는 것을 찾고 띄어쓰기는 선택자이다*/
+    display: block;
+}
+
+.menu {
+    float: left;
+}
+
+.menu-item {
+    font-size: 16px;
+    padding: 8px 10px; /* padding-top: 8px; padding-bottom: 8px; padding-left: 10px; padding-right: 10px; 과 같습니다. */
+    float: left; /* 각 menu-item들을 수평 정렬하기 위해 사용되었습니다. */
+    line-height: 1; /* 줄 높이, 행간과 비슷한 개념으로 이해할 수 있습니다. 기본 값은 normal이며 이는 약 1.2배 정도입니다. 그대로 유지하면 .menu-item의 높이가 약 35px이 되기 때문에 1배로 수정하여 32px로 .logo의 크기와 동일하게 작업합니다. */
+}
+
+.clearfix::after { 
+    content:"";
+    display: block;
+    clear : both;
+}
