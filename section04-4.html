@@ -8,12 +8,34 @@
         <!-- HTML 문서의 제목 -->
 
         <meta charset="UTF-8">
+        <!-- 문자가 인코딩되는 방식, character set의 줄임말 -->
         <!-- 기타 정보 -->
-        <!-- 스타일 직접 입력 -->
+
         <!-- 스타일 외부에서 가져와서 연결 -->
+        <link rel ="stylesheet" href="./section04-4.css">
+        <!-- rel은 relation의 줄임말, 외부에서 가져올 문서와 현재 문서의 관계를 나타냄 -->
+        <!-- href은 링크된 리소스의 URL을 나타낸다 -->
+        <!-- ./ 는상대적인 기준임 -->
+
+        <!-- 스타일 직접 입력 -->
+        <style type = "text/css">
+            div {
+                color: red;
+                background: blue;
+
+            }
+        </style>
+
+        <!-- 다른 폴더 내에 존재할 경우  -->
+        <base href="https://heropcode.github.io/GitHub-Responsive/"> 
+        <!-- <base href="./기준폴더명/"> -->
+        <!-- 이 기준으로 파일을 찾는다. base는 html기준 1개만 입력할 수 있다, 특정 주소에서 계속 파일을 가져올 것이다. -->
+        <!-- ./폴더명/파일이름 -->
     </head>
     <body>
         <!-- 문서의 구조 -->
+        <img src = "img/bg-small.jpg" alt="샘플이미지">
+        <img src = "img/feature-tile__build.png" alt="샘플이미지2">
     </body>
 </html>
 
