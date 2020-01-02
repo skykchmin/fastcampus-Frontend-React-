@@ -1,0 +1,69 @@
+header {
+    background: tomato;
+    margin: 10px;
+    padding: 20px;
+}
+
+header nav{
+
+}
+
+header nav ul{
+    display: flex;  /* 수평을 하게 만들기 */
+}
+   
+
+header nav ul li{
+    list-style: none; /* 리스트의 점 없애기 */
+    margin: 10px;
+}
+main {
+    display: flex;
+}
+section{
+    width: 70%;
+    background: tomato;
+    margin: 10px;     /* 바깥쪽 여백 */
+    padding: 10px;    /* 안쪽 여백 */
+    box-sizing: border-box; /* padding을 하면 사이즈가 커지는데 이것을 막아준다 */
+    
+}
+
+section h1{
+
+}
+
+article{
+    background: yellowgreen;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+article h2{
+
+}
+
+article p{
+
+}
+
+aside{
+    width: 30%;
+    background: tomato;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer{
+    background: tomato;
+    margin: 10px;
+    padding: 20px;
+}
+
+footer address{
+   
+}
+
+footer address a{
+    display: block;
+}
