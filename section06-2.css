@@ -1,0 +1,18 @@
+a{
+    font-weight: bold;
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+}
+a:hover { /* 마우스가 버튼 위에 가져다 되면 색깔이 변함 */
+    
+    background: orange;
+}
+
+h2{
+    padding-bottom: 1000px;
+}
