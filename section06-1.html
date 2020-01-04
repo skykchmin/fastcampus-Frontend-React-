@@ -1,0 +1,24 @@
+<!-- a 태그 -->
+<!-- 현재 페이지에서 다른 페이지로 내보낼 때 사용 -->
+<!-- Anchor의 약자, 외부로 내보내기 -->
+
+<!-- 속성의 종류 -->
+<!-- 1. href: 링크 url을 설정 // 다른 문서 어디로 갈것인지 설정 -->
+<!-- 2. rel: 현재 문서와 링크 url의 관계 // license: 해당하는 페이지의 라인센스 , next,prev: 해당 페이지와의 관계-->
+<!-- 3. target: 링크 url의 표시 위치 // 링크를 누르면 현재 화면에서 새로운 탭이 열릴 때 있고, 현재 페이지에서 열릴 때도 있는데 
+__self: 현재 창에 띄우겠다, __blank: 다른 페이지를 현재 창에 띄우겠다-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./section06-1.css">
+</head>
+<body>
+    <a href="https://google.com" target="_blank">Google</a> <!-- a태그는 href가 필수 -->
+    <!-- self: 그냥 기존 탭에 열린다 blank: 새로운 탭에 열린다  -->
+    <a href="./section06-1.md" download>Section06-1.md</a>
+    <!-- 이걸 누르면 파일이 다운로드 된다 -->
+</body>
+</html>
