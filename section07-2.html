@@ -1,0 +1,29 @@
+<!-- image의 속성 -->
+
+<!-- srcset: 브라우저에게 제시할 이미지 URL과 원본 크기의 목록을 정의 -->
+<!-- sizes: 미디어 조건과 해당 조건일 때 이미지 최적화 크기의 목록을 정의 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <img srcset="section07-2(images)/heropy_small.png 400w,
+                section07-2(images)/heropy_medium.png 700w,
+                section07-2(images)/heropy_large.png 1000w" sizes="(min-width: 701px) 1000px,
+                (min-width: 401px) 700px,
+                400px" 
+    src="section07-2(images)/heropy.png" 
+    alt="HEROPY" />
+
+    <!-- srcset 소스의 이미지 경로/이미지 이미지의 실제 가로너비 // 최적화될 목록-->
+    <!-- sizes : (미디어 조건) 최적화된 이미지 픽셀크기 // 최적화된 목록-->
+</body>
+
+</html>
