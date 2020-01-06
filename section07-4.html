@@ -1,0 +1,28 @@
+<!-- sizes -->
+<!-- 미디어 조건과 그 조건에 해당하는 이미지의 최적화 출력 크기를 지정 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <img srcset="section07-3(images)/heropy_small.png 400w,
+                section07-3(images)/heropy_medium.png 700w,
+                section07-3(images)/heropy_large.png 1000w" 
+    sizes="(min-width: 1000px) 700px"
+    src="section07-3(images)/heropy.png" 
+    alt="HEROPY" />
+
+<!-- 미디어 조건(여기서는 1000px)과 그 조건에 해당하는 이미지의 최적화 출력 크기(700px) 지정-->
+
+<!-- width는 이미지의 ‘출력 크기’만 지정하는 데 반해, 
+    sizes는 이미지의 ‘출력 크기’ + ‘최적 크기’도 함께 지정하는 개념입니다. -->
+</body>
+
+</html>
