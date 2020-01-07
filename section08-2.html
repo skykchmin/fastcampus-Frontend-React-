@@ -1,0 +1,48 @@
+<!-- th 태그 -->
+<!-- 머리글 칸을 지정 -->
+<!-- colspan: 확장하려는 (병합) 열의 수 -->
+<!-- rowspan: 확장하려는 (병합) 행의 수 -->
+<!-- scope: 자신이 누구의 머리글 칸인지 명시 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./section08-1.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2" id="th-data">데이터</th>
+        </tr>
+        <tr>
+            <th abbr="Type" scope="col" headers="th-data">타입</th> 
+            <!-- header 속성: 자신이 종속되어있는 상위 칸에다가 아이디를 적는 것 -->
+            <th abbr="Value" scope="col" headers="th-data">값</th>
+        </tr>
+        <tr>
+            <td>알파벳</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>숫자</td>
+            <td>7</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th rowspan="2" id="th-data">데이터</th>
+            <td headers="th-data">타입</td>
+            <td>알파벳</td>
+            <td>숫자</td>
+        </tr>
+        <tr>
+            <th>값</th>
+            <td>A</td>
+            <td>7</td>
+        </tr>
+    </table>
+</body>
+</html>
