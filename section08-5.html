@@ -1,0 +1,39 @@
+<!-- colgroup, col 태그 -->
+<!-- 표의 열들을 공통적으로 정의하는 컬럼<col>과 그의 집합 <colgroup> -->
+<!-- col: column의 약어 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./section08-5.css">
+</head>
+
+<body>
+    <table>
+        <caption>데이터 타입과 값</caption>
+        <colgroup> <!-- col 그룹을 묶어주는 역활 -->
+            <col> <!-- 첫번째 열 -->
+            <col style="background-color: tomato;" span="2"> <!-- 두번째 열 부터 span 속성을 통해 연속적으로 넣겠다 -->
+        </colgroup>
+        <tr>
+            <th ></th>
+            <th>타입</th>
+            <th>값</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>알파벳</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <th >2</th >
+            <td>숫자</td>
+            <td>7</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

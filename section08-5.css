@@ -1,0 +1,15 @@
+table{
+    border-collapse: collapse; /* 테이블간의 여백을 없애는것 */
+    
+}
+
+td{
+    border: 1px solid red;
+    padding: 10px;
+    
+}
+
+th{
+    border: 1px solid red;
+    padding: 10px;
+}
