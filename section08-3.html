@@ -1,0 +1,31 @@
+<!-- td 태그 -->
+<!-- 일반 칸을 지정  -->
+<!-- td 속성 -->
+<!-- headers: th에 있는 id값을 연결 -->
+<!-- colspan: 확장하려는 열의 수 -->
+<!-- rowspan: 확장하려는 행의 수 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./section08-1.css">
+</head>
+<body>
+    
+<table>
+    <tr>
+        <th rowspan="2" id="th-data">데이터</th>
+        <td headers="th-data" id="th-type">타입</td>
+        <td headers="th-type">알파벳</td>
+        <td headers="th-type">숫자</td>
+    </tr>
+    <tr>
+        <th headers="th-data" id ="th-value"></th>>값</th>
+        <td headers="th-value">A</td>
+        <td headers="th-value">7</td>
+    </tr>
+</table>
+</body>
+</html>
