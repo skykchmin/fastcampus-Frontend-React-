@@ -1,0 +1,45 @@
+<!-- 전역 속성 -->
+
+<!-- 모든 HTML 요소에서 공통적으로 사용 가능한 속성 -->
+
+<!-- class -->
+<!-- 공백으로 구분된 요소의 별침을 지정 -->
+<!-- 별명 -->
+
+<!-- id -->
+<!-- 문서에서 고유한 식별자를 정의 -->
+<!-- 이름(고유) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .section{
+            width: 100px;
+            color: red;
+            background: blue;
+        }
+        #section {
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="section"></div>    
+    <div class="section"></div>    
+    <div class="section"></div>    
+    <div class="section"></div>    
+    <div class="section"></div>    
+    <!-- class는 별명이기 때문에 중복 가능 -->
+    <div id="section"></div>
+    <!-- id는 이름이기 때문에 중복 불가 -->
+
+    <script>
+        const section = document.querySelector('.section'); //클래스가 section인 요소
+        const sectionId = document.getElementById('section'); //id가 section인 요소
+    </script>
+</body>
+</html>
