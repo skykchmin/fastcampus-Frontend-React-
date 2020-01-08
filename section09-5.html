@@ -1,0 +1,27 @@
+<!-- data 속성-->
+
+<!-- 사용자 정의 데이터 속성을 지정 -->
+<!-- HTML에 javascript에서 이용할 수 있는 데이터(정보)를 저장하는 용도로 지정 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- data-custom-data-attributes -->
+<div id="me" data-my-name="Heropy" data-my-age="851">Heropy</div>
+<!-- data- 뒤에나온 것이 이름 my-name이 속성, 값은 heropy -->
+
+<script>
+    const me =document.getElementById('me');
+    console.log(me.dataset.myName);
+    console.log(me.dataset.myAge);
+</script>
+
+
+</body>
+</html>
