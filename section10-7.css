@@ -1,0 +1,7 @@
+.fruits li:nth-child(2n){ /* n은 늘어나는 숫자의 개념 // 2n이면 짝수*/ 
+    color: red;
+}
+
+.fruits li:nth-child(n+3){ /* 이런식으로도 넣기 가능*/ 
+    color: red;
+}
