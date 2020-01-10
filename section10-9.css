@@ -1,0 +1,15 @@
+.fruits{
+    font-size: 40px;
+}
+
+/* .fruits p:nth-of-type(1){
+    color:red;
+}
+
+.fruit .red:nth-of-type(1){
+    color:red;
+} */
+
+.fruits li:not(.strawberry){
+    color: red;
+}
