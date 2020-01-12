@@ -1,0 +1,11 @@
+div{
+    font-size: 100px;
+}
+
+div::before{
+    content: "<";
+}
+
+div::after{
+    content: ">";
+}

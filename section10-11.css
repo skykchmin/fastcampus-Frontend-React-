@@ -1,0 +1,9 @@
+ul{
+    font-size: 40px;
+}
+
+ul li::after{
+    /* content: ".0"; */
+    /* li요소에 특정 요소를 넣을 때 ex) 소수점 */
+    content: url("https://heropy.blog/css/images/pattern.png");
+}
