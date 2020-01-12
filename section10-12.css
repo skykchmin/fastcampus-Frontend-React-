@@ -1,0 +1,8 @@
+[type="password"]{
+    opacity: 0.5;
+    color:red;
+}
+/* 태그들마다 이름을 짓는 것이 어렵기 때문에 속성의 값을 통해서 css을 적용하려고한다 */
+[disabled]{
+    opacity: 0.2;
+}
