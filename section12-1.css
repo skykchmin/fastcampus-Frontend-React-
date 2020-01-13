@@ -1,0 +1,17 @@
+body *{
+    border: 2px solid;
+}
+
+.container{
+    width: 600px;
+}
+
+.parent{
+    width: 300px;
+
+}
+
+.child{
+    width: 150px;
+
+}
