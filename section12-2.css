@@ -1,0 +1,27 @@
+html{
+    font-size: 10px;
+}
+
+body *{
+    border: 2px solid;
+}
+
+.container{
+    width: 60em; 
+    /* 600px = 60em */
+    font-size: 10px;
+}
+
+.parent{
+    /* width: 30em;
+    상속이 되어서 30em = 300px */
+    width: 30em;
+    font-size: 2em;
+    /* 폰트 사이즈는 상속받은것에 2배니까 20px */
+}
+
+.child{
+    width: 20rem;
+    /* html 조상 요소 : 10px * 20 = 200px */
+    font-size: 2em;
+}
