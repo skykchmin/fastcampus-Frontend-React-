@@ -1,0 +1,7 @@
+.heropy{
+    background: url("https://heropy.blog/css/images/logo.png");
+    width: 500px;
+    height: 500px;
+    text-indent: -9999; /* 백그라운드로 사진을 불러왔을 때 대체 텍스트가 없다. 그걸 대체하기 위해서 명시적으로 -9999로 대체텍스트를 밀어낸다  */
+    
+}
