@@ -1,0 +1,8 @@
+span{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: tomato;
+    float: left; 
+    /* float이 지정되는 순간 display가 인라인에서 블록으로 변경 */
+}
