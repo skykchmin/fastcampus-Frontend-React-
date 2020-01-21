@@ -1,0 +1,11 @@
+.box{
+    width: 400px;
+    height: 300px;
+    border: 2px solid red;
+    margin: 50px;
+    background-image: url("https://heropy.blog/css/images/logo.png");
+    /* 500*500 */
+    background-repeat: no-repeat ;
+    background-size:200px ;
+    background-size: cover;
+}
