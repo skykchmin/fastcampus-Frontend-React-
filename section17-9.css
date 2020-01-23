@@ -1,0 +1,8 @@
+img{
+    width: 300px;
+    border: 1px solid lightgray;
+    transition: 1s;
+    transform: perspective(400px) rotateY(180deg);
+    backface-visibility: hidden; 
+    /* 180을 입력하게 되면 뒷면이 뒤집히기 때문에 안보인다 */
+}
