@@ -1,0 +1,24 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* position: relative;
+    left: 30px;
+    top: 30px; // transform: translate(100px, 30px); 
+    인데 transform을 쓰는 이유는 : position은 배치를 끝내는 상태인데
+    시키는것, position은 애니메이션에 특화되있지 않은데 특화되있지 않는것을 사용하면 최적화되어있지 않다
+    >>transform을 사용하는 것*/
+    transition: 1s;
+}
+.box:hover{
+    /* transform: translate(30px, 30px); */
+    /* transform: scale(1.5); // 1.5배 키우기 */
+    /* transform: skew(45deg); // 45도로 X축에 의해 비틀어진다 */
+    /* transform: skew(10deg, 5deg); // 10도, 5도로 x축,y축 비틀어진다 */
+    transform: translate(20px, 10px) skew(20deg);
+}
