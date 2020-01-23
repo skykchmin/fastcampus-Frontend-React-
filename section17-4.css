@@ -1,0 +1,7 @@
+img{
+    width: 300px;
+    border: 1px solid lightgray;
+    transition: 1s;
+    transform: perspective(500px) rotateX(45deg) ; 
+    /* //perspective가 필요한 이유: z축을 확인하기 위해서 */
+}
