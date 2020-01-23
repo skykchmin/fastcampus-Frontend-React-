@@ -1,0 +1,8 @@
+img{
+    width: 200px;
+    border: 1px solid lightgray;
+    transform: rotate(45deg);
+    transition: 1s;
+    transform-origin: 50% 50%;
+    /* 기준점을 이동 */
+}
