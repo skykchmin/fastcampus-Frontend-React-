@@ -1,0 +1,30 @@
+.perspective{
+    width: 200px;
+    perspective: 500px;
+    padding: 70px;
+}
+
+.grand-parent{
+    width: 200px;
+    border: 3px solid dodgerblue;
+    transition: 1s;
+    transform: rotateX(-45deg);
+    transform-style: preserve-3d ;
+    /* 자식요소에서도 3d를 사용하겠다 */
+}
+
+.parent{
+    width: 200px;
+    border: 3px solid tomato;
+    transition: 1s;
+    transform: rotateY(45deg);
+    transform-style: preserve-3d ;
+    /* 자식요소에서도 3d를 사용하겠다 */
+}
+
+img{
+    width: 200px;
+    border: 3px solid lightgray;
+    transition: 1s;
+    transform: rotateX(45deg);
+}
