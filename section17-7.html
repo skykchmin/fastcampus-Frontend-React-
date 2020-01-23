@@ -1,0 +1,24 @@
+<!-- perspective: 하위 요소를 관찰하는 원근 거리를 설정 -->
+<!-- 단위: px, cm, em -->
+
+<!-- perspective 속성과 함수의 차이점 -->
+<!-- perspecitve: 관찰 대상의 부모 요소 -->
+<!-- transform: perspective: 관찰 대상  -->
+<!-- perspective: 관찰 대상의 부모(중심) 요소를 적용하여 하위 요소들을 관찰하는 원근거리를 설정하며
+trnasform: perspective: 관찰 대상에 직접 적용하여 그 대상을 관찰하는 원근 거리를 설정한다 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="./section17-7.css">
+    </head>
+    <body>
+        <div class="perspective">
+            <div class="grand-parent">
+                <div class="parent">
+                    <img src="https://heropy.blog/css/images/logo.png" alt="heropy">
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
