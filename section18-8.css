@@ -1,0 +1,7 @@
+p{
+    text-align: justify;
+    column-width: 150px;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px dashed red;
+}
