@@ -1,0 +1,54 @@
+/* 1. display-inline을 하는 방법 */
+
+/* 
+.container{
+    border: 2px solid red;
+    
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    /* display: inline;
+     디스플레이 인라인 방식으로 하면, 크기를 설정할 수 없다 
+     */
+     /* display: inline-block;
+      인라인 블록은 인라인요소를 가지지만, 크기를 설정할 수 있다 
+      인라인 요소는 텍스트를 다룸, 아이템과 아이템 사이에 띄어쓰기가 설정되어있다 
+      각각의 아이템들이 글자화되어있다 
+      font-size: 0;을 해야 띄어쓰기가 없어짐.
+      >> 복잡함
+      
+      
+    
+} */
+
+/* 2. 가상요소를 사용하는 방법 */
+
+/* .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    border: 2px solid red;
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    float: left;
+} */
+
+/* 3. display: flex; 를 사용하는 방법 */
+
+.container{
+    border: 2px solid red;
+    display: flex;
+}
+
