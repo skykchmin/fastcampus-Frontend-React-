@@ -1,0 +1,35 @@
+.container{
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    /* 열은 2개의 열인데 100px 크기 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 행은 3개의 행인데 1:1:1 비율 */
+    grid-auto-rows: 100px;
+    /* 암시적 행은 100px */
+    grid-auto-columns: 1fr;
+    /* 암시적 열은 1:1:1:1비율로 설정  */
+}
+
+.item{
+    border: 10px solid red;
+}
+
+.item:nth-child(1){
+    grid-column: 1 / 3;
+    /* item1이 1번부터 3번행까지 확장되었다 */
+}
+
+.item:nth-child(2){
+    grid-column: 3 / 5;
+    /* item2이 행3번부터 행5번까지로 확장되었다 */
+}
+
+.item:nth-child(3){
+    grid-column: span 2;
+}
+
+.item:nth-child(4){
+    grid-row: 5 / 7;
+    grid-column: 6 / 7
+}
