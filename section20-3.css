@@ -1,0 +1,11 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* repeat: 반복 횟수 fr: 비율 */
+    grid-template-rows: 100px 100px;
+    border: 4px solid lightgray;
+}
+
+.item{
+    border: 2px dashed red;
+}
