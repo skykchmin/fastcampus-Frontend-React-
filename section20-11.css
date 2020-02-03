@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    
+    grid-template: 
+    "header header header" 80px
+    "main . main" 350px
+    "footer footer footer" 130xpx;
+}
+.container > * {
+    border: 10px solid red;
+}
+header{
+    
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{ 
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
