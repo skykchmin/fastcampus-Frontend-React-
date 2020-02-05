@@ -1,0 +1,27 @@
+<!-- @at-root(중첩에서 벗어나기) -->
+<!-- 중첩에서 벗어나고 싶을때 @at-root 키워드를 사용 -->
+<!-- 중첩 안에서 생성하되 중첩 밖에서 사용해야 경우에 유용 -->
+
+<!-- .list {
+    $w: 100px;
+    $h: 50px;
+    li {
+      width: $w;
+      height: $h;
+    }
+    @at-root .box { box밖에서 선언하되, width와 height의 값이 필요할 경우 
+      width: $w;
+      height: $h;
+    }
+  } -->
+
+  <!-- 
+    ///////////////////////////
+  .list li {
+    width: 100px;
+    height: 50px;
+  }
+  .box {
+    width: 100px;
+    height: 50px;
+  } -->
