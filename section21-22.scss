@@ -1,0 +1,25 @@
+// sass 재활용(Mixins)
+
+// sass mixins는 스타일 시트 전체에서 재사용할 css 선언 그룹을 정의하는 매우 중요한 기능!!
+// 약간의 minxin(믹스인)으로 다양한 스타일을 만들어 낼수 있다
+
+// 중요!
+// 선언하기(@mixin)와 포함하기 (@include)이다. 
+// 만들어서 (선언)ㅡ 사용(포함)하는 것이다
+
+@mixin size($w : 100px, $h: 100px) { // mixin은 정의, 변수의 기본값이 안정해져있을 때 :로 표시가능
+    width: $w;
+    height: $h;
+}
+
+.box1{
+    @include size;
+}
+
+.box2{
+    @include size(200px, 300px);
+}
+
+.box3{
+    @include size($h: 300px); // 개별로 설정 가능
+}
