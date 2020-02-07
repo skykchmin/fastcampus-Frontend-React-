@@ -1,0 +1,12 @@
+$w: 100px;
+.item{
+    display: block;
+    @if ($w > 50px and $w > 90px){
+        width:400px;
+    }
+
+}
+
+// .item{
+//     display: block;
+// }
