@@ -1,0 +1,34 @@
+// 인수의 기본값 설정
+// 인수는 기본값을 가질 수 있다
+//@include 포함 단계에서 별도의 인수가 전달되지 않으면 기본값이 사용된다
+
+@mixin dash-line($width: 1px, $color: black) {
+    border: $width dashed $color;
+  }
+  
+  .box1 { @include dash-line; }
+  .box2 { @include dash-line(4px); }
+
+  /////////////
+
+//   .box1 {
+//     border: 1px dashed black;
+//   }
+//   .box2 {
+//     border: 4px dashed black;
+//   }
+
+
+////////////
+// 키워드 인수
+///////////
+
+// Mixin에 전달할 인수를 입력할 때 명시적으로 키워드(변수)를 입력하여 작성할 수 있습니다.
+// 별도의 인수 입력 순서를 필요로 하지 않아 편리하게 작성할 수 있습니다.
+// 단, 작성하지 않은 인수가 적용될 수 있도록 기본값을 설정해 주는 것이 좋습니다.
+
+// @mixin 믹스인이름($매개변수A: 기본값, $매개변수B: 기본값) {
+//     스타일;
+//   }
+  
+//   @include 믹스인이름($매개변수B: 인수);
