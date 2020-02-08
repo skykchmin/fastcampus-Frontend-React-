@@ -1,0 +1,28 @@
+// @mixin
+// @mixin 지시어를 이용하여 스타일을 정의할수있다
+
+// SCSS
+// @mixin 믹스인이름 {
+//     스타일;
+// }
+
+// // SASS
+// =믹스인이름
+//     스타일
+
+// @mixin large-text{
+//     font:{
+//         size: 22px;
+//         weight: bold;
+//         family: sans-serif;
+//     }
+//     color: orange;
+
+
+//     &::after{
+//         content: "!!";
+//     }
+//     span.icon{
+//         // background: url("/");
+//     }
+// }
