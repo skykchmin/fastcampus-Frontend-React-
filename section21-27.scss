@@ -1,0 +1,28 @@
+// @content
+// 선언된 Mixin에 @content이 포함되어 있다면 해당 부분에 원하는 스타일 블록을 전달할수 있다
+// 이 방식을 사용하여 기존 Mixin이 가지고 있는 기능에 선택자나 속성등을 추가할 수 있다 
+
+// @mixin 믹스인이름() {
+//     스타일;
+//     @content;
+//   }
+  
+//   @include 믹스인이름() {
+//     // 스타일 블록
+//     스타일;
+//   }
+
+@mixin icon($url) {
+    &::after{
+        content: $url;
+        @content;
+    }
+}
+
+.box{
+    @include icon("icon1.png");
+}
+
+.box2{
+    @include icon("icon2.png")
+}
