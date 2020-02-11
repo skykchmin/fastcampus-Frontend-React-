@@ -15,7 +15,8 @@
 @mixin icon($url) {
     &::after{
         content: $url;
-        @content;
+        @content; // 컨텐트를 이용해 스타일시트를 넣을 수 있다
+        
     }
 }
 
@@ -24,5 +25,10 @@
 }
 
 .box2{
-    @include icon("icon2.png")
+    @include icon("icon2.png"){
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    };
 }
