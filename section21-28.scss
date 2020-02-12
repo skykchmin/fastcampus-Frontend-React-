@@ -1,0 +1,16 @@
+// 확장(Extend)
+// 특정 선택자가 다른 선택자의 모든 스타일을 가져야하는 경우가 종종 있다
+// 이럴 경우 선택자의 확장 기능을 사용할 수 있다
+
+// extend 선택자;
+
+.btn{
+    padding: 10px;
+    margin: 10px;
+    background: blue;
+}
+
+.btn-danger{
+    @extend .btn;
+    background: red;
+}
