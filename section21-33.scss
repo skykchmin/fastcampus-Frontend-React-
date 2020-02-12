@@ -1,0 +1,8 @@
+// 조건과 반복
+// if
+// if(조건, 표현식1, 표현식2)
+
+$width: 555px;
+div {
+  width: if($width > 300px, $width, null);
+}
