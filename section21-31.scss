@@ -1,0 +1,16 @@
+@function colums($number: 1, $columns: 12, $width: 1200px){
+    @return $width * ($number / $columns);
+}
+
+.container{
+    $width: 980px;
+    .item:nth-child(1){
+        width: columns(1);
+    }
+    .item:nth-child(2){
+        width: columns(8);
+    }
+    .item:nth-child(3){
+        width: columns(3);
+    }
+}
