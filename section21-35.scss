@@ -1,0 +1,28 @@
+@function limitseize($szie){
+    @if  ($size >= 0 and $size <= 200px) {
+        @return 200px;
+    }
+    @else{
+        @return 800px;
+    }
+}
+
+div{
+    width: limitseize(180px);
+}
+
+@mixin positionCenter($w, $h, $p: absolute) {
+  
+   width: if(unitless($w), #{$w}px, $w);
+   height:  if(unitless($h), #{$h}px, $h);
+   position: $p; 
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+
+.box1{
+    @include positionCenter(10px, 20px )
+}
