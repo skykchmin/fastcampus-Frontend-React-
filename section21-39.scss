@@ -1,0 +1,20 @@
+// map 데이터를 통해서 인덱스를 추출해내기 위해서는 map-keys, map-values 를 통해서 list 데이터로 변환한다음에 index 데이터로 추출해야한다
+
+$fruits-data:( 
+    // map데이터 key,value로 구성
+    apple: korea,
+    orange: china,
+    banana: japan
+);
+
+@each $fruits, $country in fruits-data {
+    // map-keys($furits-data) => (apple, orange, banana)
+    // map-values($furits-data) => (korea,china, japan)
+
+    $fruits-data--key-list: map-keys($furits-data);
+    $index: index($fruits-data--key-list, $fruit);
+    .box-#{fruits}{
+        width: 100px * $index;
+        background: url("/images/#{$country}.png");
+    }
+}
