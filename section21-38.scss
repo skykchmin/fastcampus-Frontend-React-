@@ -1,0 +1,12 @@
+$fruits: (apple, orange, banana, mango);
+
+.fruits{
+    @each $fruit in fruits {
+        $index: index($fruits, $fruit);
+        // fruit가 몇번째 인덱스인지 
+        li:nth-child(#{$index}){    
+            left: 50px * $index;
+            background: url("image/#{fruits}.png");
+        }
+    }
+}
