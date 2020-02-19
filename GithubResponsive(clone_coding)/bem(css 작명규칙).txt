@@ -1,0 +1,9 @@
+    BEM(css 작명규칙)
+    __ : ~의 일부분
+    ex) body__container: body의 일부분, container다 
+
+    -- : ~의 상태
+    ex) btn--success
+
+    - 일반적인 작명
+    ex) toggle-btn
