@@ -102,11 +102,29 @@ a {
 }
 
 .summary__title{
-
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
 }
 
 .summary__description{
-  
+  font-size: 26px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5;
+}
+
+/* SECTION & INNER */
+.section{
+  position: relative;
+}
+
+.section .inner{
+  max-width: 980px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
 }
 
 /* Header */
@@ -119,11 +137,8 @@ header {
 
 header .inner {
   /* inner로 분리하는 이유 */
-  max-width: 980px;
   /* max-widht를 해놓고 width를 해놓은다 */
-  width: 900px;
   height: 78px;
-  margin: 0 auto;
 
 }
 
@@ -219,9 +234,61 @@ header .sub-menu li a:hover{
 /* VISUAL */
 
 .section--visual{
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover; /* 화면이 커지고작아지더라도 짤리지 않게막는 것, 전체 영역을 커버 */  
+}
+
+.section--visual::before{
+  /* 배경이미지, 텍스트 뒤쪽에 어두운 배경을 깐다 */
+  content: "";
+  position: absolute;
+  /* absolute를 사용하면 무조건적으로 부모요소에 포지션의 absolute가 있는지 확인 */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 
 }
 
-.section--visual  .summary{
+.section--visual .inner{
+  padding: 160px 0;
+}
 
+.section--visual .summary__title{
+  color: #FFF;
+  font-size: 54px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 
+               0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+.section--visual .summary__description{
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 
+               0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+#sign-form{
+
+}
+
+#sign-form .input--text{
+  width: 100%;
+  height: 40px;
+
+}
+
+#sign-form li{
+  margin-bottom: 17px;
+}
+
+#sign-form li:last-child{
+  margin-bottom: 0;
+}
+#sign-from .caption{
+  
 }
