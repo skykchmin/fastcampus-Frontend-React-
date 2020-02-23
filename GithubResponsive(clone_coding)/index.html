@@ -1,124 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>GitHub</title>
     <meta name="author" content="skykchmin">
-    <meta name="description" content="GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale= 1, minimum-scale=1">
+    <meta name="description"
+        content="GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale= 1, minimum-scale=1">
     <!-- viewport : 레이아웃이 나오는 것 , initial-scale: 화면 확대비율, user-scalable: 사용자가 확대 축소할수있는것-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 인터넷 익스플로져 랜더링 방식이 존재하는데 ie=edge (최신방식)으로 랜더링해줘라 -->
 
-   <!-- http://ogp.me/ -->
+    <!-- http://ogp.me/ -->
 
-   <!-- 외부에 공유했을때 오픈 그래프와 , 트위터 카드로 알아볼 수 있다 -->
-<meta property="og:type" content="website">
-<!-- 정보의 타입: 웹사이트고  -->
-<meta property="og:site_name" content="GitHub">
-<meta property="og:title" content="Build software better, together">
-<meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-<meta property="og:image" content="img/logo__github.png">
-<!-- 로그의 png파일을 설정 -->
-<meta property="og:url" content="https://github.com">
+    <!-- 외부에 공유했을때 오픈 그래프와 , 트위터 카드로 알아볼 수 있다 -->
+    <meta property="og:type" content="website">
+    <!-- 정보의 타입: 웹사이트고  -->
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="Build software better, together">
+    <meta property="og:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="og:image" content="img/logo__github.png">
+    <!-- 로그의 png파일을 설정 -->
+    <meta property="og:url" content="https://github.com">
 
-<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
-<meta property="twitter:card" content="summary">
-<meta property="twitter:site" content="GitHub">
-<meta property="twitter:title" content="Build software better, together">
-<meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
-<meta property="twitter:image" content="img/logo__github.png">
-<meta property="twitter:url" content="https://github.com">
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GitHub">
+    <meta property="twitter:title" content="Build software better, together">
+    <meta property="twitter:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="twitter:image" content="img/logo__github.png">
+    <meta property="twitter:url" content="https://github.com">
 
-<!-- 파비콘: 사이트를 대표하는 아이콘 -->
+    <!-- 파비콘: 사이트를 대표하는 아이콘 -->
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" href="./favicon.png">
-<link rel="apple-touch-icon" href="favicon.png"> <!-- 스마트폰에서 아이콘으로 사용할 수 있다 -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="./favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png"> <!-- 스마트폰에서 아이콘으로 사용할 수 있다 -->
 
-<!-- 구글 폰트 적용 // roboto-->
-<!-- css도 작업 필요 // 링크를 통해 연결-->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <!-- 구글 폰트 적용 // roboto-->
+    <!-- css도 작업 필요 // 링크를 통해 연결-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 
-<!-- 브라우저 초기화 // reset.css cdn 검색 도 가능 -->
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/main.css">
-    
-    
+    <!-- 브라우저 초기화 // reset.css cdn 검색 도 가능 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
 </head>
+
 <body>
-<div class="body__container">
+    <div class="body__container">
 
-    <!-- Header -->
-   <header class="section">
-        <div class="inner clearfix">
-            <div class="menu-group float--left">
-                <div class="logo">
-                    <a href="#">GitHub</a>
+        <!-- Header -->
+        <header class="section">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
+                    <div class="logo">
+                        <a href="#">GitHub</a>
+                    </div>
+                    <ul class="main-menu ">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Open source</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Explore</a></li>
+                    </ul>
                 </div>
-                <ul class="main-menu ">
-                    <li><a href="#">Personal</a></li>
-                    <li><a href="#">Open source</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Explore</a></li>
-                </ul>
+
+                <div class="sign-group float--right">
+                    <div class="btn-group">
+                        <a href="#" class="btn sign-in">Sign in</a>
+                        <a href="#" class="btn btn--primary sign-up">Sign up</a>
+                    </div>
+                    <form id="search-form" method="POST" action="">
+                        <input type="text" id="search" class="input--text" placeholder="Search GitHub">
+                        <input type="submit" value="submit">
+                    </form>
+                    <ul class="sub-menu">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+
+
+                    </ul>
+
+                </div>
             </div>
 
-            <div class="sign-group float--right">
-                <div class="btn-group">
-                    <a href="#" class="btn sign-in">Sign in</a>
-                    <a href="#" class="btn btn--primary sign-up">Sign up</a>
+        </header>
+
+        <!-- VISUAL -->
+        <section class="section section--visual">
+            <div class="inner">
+
+                <div class="summary">
+                    <div class="summary__title">
+                        How &nbsp;people build &nbsp; software
+                        <!-- br태그 대신 공백을 쓴 이유 반응형을 만들기 위해서 -->
+                    </div>
+                    <div class="summary__description">
+                        Millions of developers use GitHub to build personal projects, support their businesses, and
+                        &nbsp; work together on open source technologies.
+                    </div>
                 </div>
-                <form id="search-form" method="POST" action="">
-                    <input type="text" id="search" class="input--text" placeholder="Search GitHub">
-                    <input type="submit" value="submit">
+
+                <form id="sign-form" method="POST" action="">
+                    <ul>
+                        <li><input type="text" class="input--text" placeholder="Pick a username"></li>
+                        <li><input type="email" class="input--text" placeholder="Your email address"></li>
+
+                        <li>
+                            <input type="password" class="input--text" placeholder="Create a password">
+                            <p class="caption">Use at least one letter, one numeral, and seven characters.
+                            </p>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn--primary">Sign up for GitHub</button>
+                            <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and
+                                privacy policy. We'll occasionally send you account related emails.</p>
+                        </li>
+                    </ul>
+
                 </form>
-                <ul class="sub-menu">
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
-
-
-                </ul>
-
             </div>
-        </div>
+            <!-- FEATURE -->
 
-   </header>
-    
-   <!-- VISUAL -->
-   <section class="section section--visual">
-        <div class="inner">
+            <section class="section section--feature">
 
-            <div class="summary">
-                <div class="summary__title">
-                    How people build software
+                <div class="summary">
+                    <div class="summary__title">
+                        Welcome home, developers
+                    </div>
+                    <div class="summary__description">
+                        GitHub fosters a fast, flexible, and collaborative development process that lets you work on
+                        your own or with others.
+                    </div>
                 </div>
-                <div class="summary__description">
-                    Millions of developers use GitHub to build personal projects, support their businesses, and work together on open source technologies.
+
+                <div class="video">
+                    <!-- 비율에 맞게 나와야함 -->
+
+                    <div class="video-ratio">
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/afvT1c1ii0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <!-- 비디오는 링크들어간다음에 소스코드 복사 -->
+                    </div>
+                    
                 </div>
-            </div>
 
-            <form id="sign-form" method="POST" action="">
-                <li><input type="text" class="input--text" placeholder="Pick a username"></li>
-                <li><input type="email" class="input--text" placeholder="Your email address"></li>
+                <div class="titles">
 
-                <li>
-                    <input type="password" class="input--text" placeholder="Create a password">
-                    <p class="caption">Use at least one letter, one numeral, and seven characters.
-                        By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
-                </li>
-                <li>
-                    <button type="submit" class="btn btn--primary">Sign up for GitHub</button>
-                    <p class="caption">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
-                </li>
-            
-            </form>
-        </div>
+                </div>
+            </section>
+        </section>
 
-   </section>
+    </div>
 
-</div>
-    
 </body>
+
 </html>
