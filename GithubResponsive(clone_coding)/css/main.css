@@ -72,7 +72,7 @@ a {
 }
 .input--text:focus {
   border-color: #51a7e8 !important; /* header #search 선택자를 덮어쓰기 위해서 사용 */
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5); /*  focus 되었을 때 그림자를 남기기 위해서 ,로 표시  */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5);
 }
 /* Vendor prefix(브라우저 업체별 접두어) */
 .input--text::-webkit-input-placeholder { color: #cacaca; }
@@ -112,15 +112,14 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, .75);
   background: #fff;
 }
-header .inner { 
-   /* inner로 분리하는 이유 */
+header .inner {
+      /* inner로 분리하는 이유 */
   /* max-widht를 해놓고 width를 해놓은다 */
   height: 78px;
 }
 /* Menu group(Left) */
 header .menu-group {
   display: flex;
-  /* 자식요소 수평정렬 */
   align-items: center;
   height: 100%;
 }
@@ -132,7 +131,7 @@ header .logo a {
   width: 32px;
   height: 32px;
   display: block;
-  text-indent: -9999px; /* 대체 텍스트 */  /* 텍스트를  민다 화면에 대체텍스트를 밀기 위해서*/
+  text-indent: -9999px; /* 대체 텍스트 */ /* 대체 텍스트 */  /* 텍스트를  민다 화면에 대체텍스트를 밀기 위해서*/
 }
 header .logo a:hover {
   background: url("../img/logo_on.svg"); /* 다른 이미지로 대체 */
@@ -141,7 +140,7 @@ header .main-menu {
   display: flex;
 }
 header .main-menu li a {
-  padding: 10px;  /* 박스의 크기가 작기때문에 padding을 준다 */
+  padding: 10px; /* 박스의 크기가 작기때문에 padding을 준다 */
   display: block;
   color: #3c4146;
 }
@@ -207,8 +206,7 @@ header .sub-menu li a:hover {
   background-position: bottom left;
   background-size: cover; /* 화면이 커지고작아지더라도 짤리지 않게막는 것, 전체 영역을 커버 */  
 }
-.section--visual::before {
-  /* 배경이미지, 텍스트 뒤쪽에 어두운 배경을 깐다 */
+.section--visual::before {   /* 배경이미지, 텍스트 뒤쪽에 어두운 배경을 깐다 */
   content: "";
   position: absolute; /* absolute를 사용하면 무조건적으로 부모요소에 포지션의 absolute가 있는지 확인 */
   top: 0;
@@ -219,7 +217,7 @@ header .sub-menu li a:hover {
 }
 .section--visual .inner {
   padding: 160px 0;
-  display: flex;
+  display: flex; 
 }
 .section--visual .summary {
   flex: 1; /* flex는 단축속성 , flex-basis 속성은 항목의 크기를 결정한다 //  */
@@ -263,7 +261,6 @@ header .sub-menu li a:hover {
   height: 62px;
   padding: 0 25px;
   font-size: 20px;
-  /* text-align: center; // 위에는 inline-flex로 되어있는데 그래서 동작이 안됌*/ 
   justify-content: center;
 }
 
@@ -284,7 +281,7 @@ header .sub-menu li a:hover {
 }
 .section--feature .video .video-ratio {
   height: 0;
-  padding-top: 56.25%; /* %는 부모요소를 받음 16:9을 받기 위해 */
+  padding-top: 56.25%;
   position: relative;
 }
 .section--feature .video .video-ratio iframe {
@@ -399,7 +396,6 @@ footer .inner {
 }
 footer .site-links {
   display: flex; /* 수직정렬 */
-  
 }
 footer .site-links li {
   font-size: 12px;
@@ -413,8 +409,7 @@ footer .site-links li a {
   color: #4078c0;
 }
 footer .site-links li a:hover {
-  text-decoration: underline; /* 줄 쳐지는것 */
-  
+  text-decoration: underline;  /* 줄 쳐지는것 */
 }
 footer .logo {
   width: 24px;
