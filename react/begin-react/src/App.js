@@ -1,5 +1,5 @@
 import React from 'react';
-import Hello from './section29-02(01)';
+import Hello from './Hello';
 
 function App() {
   return (
